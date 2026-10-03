@@ -100,11 +100,11 @@ if defined PLATFORM_TOOLSET (
 )
 
 set common_cmake_flags=%common_cmake_flags%^
+  -DCMAKE_POLICY_VERSION_MINIMUM=3.5^
   -DCMAKE_CONFIGURATION_TYPES:STRING="%build_config%"^
   -DCMAKE_BUILD_TYPE:STRING="%build_config%"^
   -DCMAKE_USER_MAKE_RULES_OVERRIDE:PATH="%RIME_ROOT%\cmake\c_flag_overrides.cmake"^
   -DCMAKE_USER_MAKE_RULES_OVERRIDE_CXX:PATH="%RIME_ROOT%\cmake\cxx_flag_overrides.cmake"^
-  -DCMAKE_EXE_LINKER_FLAGS_INIT:STRING="-llibcmt"^
   -DCMAKE_MSVC_RUNTIME_LIBRARY="MultiThreaded$<$<CONFIG:Debug>:Debug>"
 
 set deps_cmake_flags=%common_cmake_flags%^
