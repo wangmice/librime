@@ -9,6 +9,7 @@ bin/*
 share/*
 deps/*/*
 plugins/*/
+!plugins/user_dictionary_api/
 env.bat
 node_modules/
 *~
