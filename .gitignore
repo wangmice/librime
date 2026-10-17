@@ -16,3 +16,9 @@ node_modules/
 .cache/
 *.7z
 .DS_Store
+/build_Win32/
+/build_x64/
+/dist_Win32/
+/dist_x64/
+/lib_Win32/
+/lib_x64/
